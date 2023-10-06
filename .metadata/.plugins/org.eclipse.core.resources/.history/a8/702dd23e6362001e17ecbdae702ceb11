@@ -1,0 +1,15 @@
+package ex06;
+//Lambda4의 익명의 클래스를 람다식으로 바꿈
+
+interface Cal2 {
+	int max(int num1, int num2);
+}
+
+public class Lambda5 {
+	public static void main(String[] args) {
+		Cal2 cal = 
+			(num1, num2) ->	num1>num2 ? num1 : num2;
+//			받는인자 써주고(어차피 결과사용할때도 필요하니까..) 결과 써줌 return도 빼버림
+			System.out.println(cal.max(5,10));
+	}
+}

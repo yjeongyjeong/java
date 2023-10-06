@@ -1,0 +1,9 @@
+package ex09_FunctionInterface;
+
+public class ImplSampleInterface implements SampleInterface{
+
+	@Override
+	public void sample() {
+	}
+
+}

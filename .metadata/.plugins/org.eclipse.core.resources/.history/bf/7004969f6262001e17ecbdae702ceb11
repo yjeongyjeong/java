@@ -1,0 +1,13 @@
+package ex06;
+
+interface Cal2 {
+	int max(int num1, int num2);
+}
+
+public class Lambda5 {
+	public static void main(String[] args) {
+		Cal2 cal = new Max() {
+			
+		}
+	}
+}

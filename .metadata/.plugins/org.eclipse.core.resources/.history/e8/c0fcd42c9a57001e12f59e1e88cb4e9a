@@ -1,0 +1,7 @@
+package ex10;
+
+public class 대학동창 {
+	String 이름;
+	String 전공;
+	int 나이;
+}

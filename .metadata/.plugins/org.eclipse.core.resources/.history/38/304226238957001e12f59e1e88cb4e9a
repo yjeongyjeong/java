@@ -1,0 +1,13 @@
+package ex09_inher;
+
+public class PhoneExam01 {
+	public static void main(String[] args) {
+		Phone p = new Phone("애플", "V11");
+		p.bell();
+		p.sendVoice("hello?");
+		p.hangUp();
+		
+		SmartPhone s = new SmartPhone();
+		
+	}
+}

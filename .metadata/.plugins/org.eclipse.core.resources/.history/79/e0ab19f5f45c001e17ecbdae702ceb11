@@ -1,0 +1,33 @@
+package ex08;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import lombok.Data;
+
+class Car{
+	private String model;
+	private String color;
+}
+
+public class SetCollection3 {
+	public static void main(String[] args) {
+		Set<Num> set = new HashSet<>();
+		
+		set.add(new Num(9)); //ex. 주소값 0x10 해쉬값 0 
+		set.add(new Num(12)); //해쉬값 0 //위에서 해쉬값0인게 나왔으니까 equals가 수행되면서 ㄹㅇ로 값이 같은지 확인하고 안똑같으니까 애드됨
+		set.add(new Num(7)); //해쉬값 1
+		set.add(new Num(9)); //ex. 주소값 0x20 //해쉬값 0 해쉬값0인애들이 있으니까 equals가 실행되면서 ㄹㅇ로 값이 같은지 확인하는데 똑같으니까 false.. 값이 추가되지 않음
+		
+		Iterator<Num> iter = set.iterator();
+		Num str; 
+		while(iter.hasNext()) {
+			System.out.println(iter.next()); 
+//			순서대로 출력되지 않음
+//			근데 값이 다나옴 9999가 중복되는데 그냥 잘 들어가서 저장됨!!! -> new로 만들어서 주소값이 다르기 때문... 
+//			이를 방지하려면 hashcode, equals를 재정의해주기 -> hashcode는 값을 넣을때마다 시행되고, equals는 hashcode의 값이 같은 경우 실행됨!(이전에 hashcode의 값이 있는데 다시 invoke된경우) 해쉬코드 자체 설명도
+
+		}
+	}
+}

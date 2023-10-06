@@ -1,0 +1,7 @@
+package ex09_inher02;
+
+public class Example01 {
+	public static void main(String[] args) {
+		BabyCat catObj = new BabyCat();
+	}
+}

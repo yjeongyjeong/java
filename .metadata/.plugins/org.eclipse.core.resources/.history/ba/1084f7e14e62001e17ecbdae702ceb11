@@ -1,0 +1,19 @@
+package ex01;
+
+class Outer{
+	private static int num = 0;
+	static class Nested1{
+		void add(int n) { num += n ; }
+		// n : 현 메서드 안에서만 존재하는 지역변수
+		// num : static이 붙어잇는 멤버변수
+	}
+	static class Nested2{
+		int get() { return num ; }
+	}
+}
+
+public class StaticNestedClass {
+	public static void main(String[] args) {
+		
+	}
+}

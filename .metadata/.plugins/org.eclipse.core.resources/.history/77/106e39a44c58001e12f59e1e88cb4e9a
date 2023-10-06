@@ -1,0 +1,5 @@
+package ex08_409_no7;
+
+public class MySqlDao implements DataAccessObject {
+
+}

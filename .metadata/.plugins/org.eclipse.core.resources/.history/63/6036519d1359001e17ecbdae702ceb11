@@ -1,0 +1,44 @@
+package ex04;
+
+import java.util.Scanner;
+
+public class MainClass extends Student{
+	public static void main(String[] args) {
+		/*
+		 * 학생배열 생성 후 3명의 정보 입력 
+		 * 학생정보 출력 
+		 * 학생전체 총점 및 평균 출력
+		 */
+		
+		String[][] student = new String[3][3];
+		student[0][0] = "가가가";
+		student[0][1] = "3학년 1반 1번";
+		student[0][2] = "여자";
+
+		student[1][0] = "나나나";
+		student[1][1] = "3학년 1반 2번";
+		student[1][2] = "남자";
+
+		student[2][0] = "다다다";
+		student[2][1] = "3학년 1반 3번";
+		student[2][2] = "여자";
+		
+		for(int i = 0; i<student.length ;i++) {
+			for(int j = 0; j < student.length; j++) {
+			System.out.print(student[i][j]+ " ");
+			System.out.println();
+			System.out.println();
+			}
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println(student[0][0] + "의 점수 입력 >>");
+		int kor = sc.nextInt();
+		int eng = sc.nextInt();
+		int math = sc.nextInt();
+		
+		printTotal(kor, eng, math);
+	
+	}
+	
+}

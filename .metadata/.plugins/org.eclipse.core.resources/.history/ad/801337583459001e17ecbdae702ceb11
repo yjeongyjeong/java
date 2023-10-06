@@ -1,0 +1,16 @@
+package ex04_myself2;
+
+import java.util.Scanner;
+
+public class MainClass extends Student {
+	public static void main(String[] args) {
+		/*
+		 * 학생배열 생성 후 3명의 정보 입력 학생정보 출력 학생전체 총점 및 평균 출력
+		 */
+		
+		for(int i = 0; i< ; i++)
+		Scanner sc = new Scanner(System.in);
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package ex04;
+
+interface Printable{
+	void print();
+}
+// 익명 클래스 : 클래스내의 기능을 수행할뿐이지 굳이 클래스 이름을 불러와서 다른 기능을 수행할 필요가 없는 경우
+// 예를 들어 이전 로컬 클래스에서 printer는 내부에서 println(con)이 목적일 뿐 클래스로 구현할 필요는 없음
+class Papers{
+				//	Printer p = new Printer(); 에러남
+	private String con;
+	public Papers(String con) { this.con = con;	}
+	
+	public Printable getPrinter() {
+
+		return new Printable();
+	
+	}
+}
+
+public class UseLocalInnerClass {
+	public static void main(String[] args) {
+		Papers p = new Papers("프린터로 메세지 출력해주세요.");
+		
+		Printable prn = p.getPrinter();
+		prn.print();
+				
+	}
+}

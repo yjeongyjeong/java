@@ -1,0 +1,36 @@
+package ex06;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+@FunctionalInterface
+interface InterRoll2 {
+	int roll();
+}
+class Ddd2 implements InterRoll2{
+
+	@Override
+	public int roll() {
+		return (int)(Math.random()*100+1);
+	}
+	
+}
+
+
+public class Lambda8 {
+	public static void main(String[] args) {
+		InterRoll2 ddd = () -> 	(int)(Math.random()*6);	
+		int result = ddd.roll();
+		System.out.println(result);
+		
+		Function<Integer, Double> f1 = x -> Math.random()*6;
+		System.out.println(f1.apply(null)); //null값 넣어도 된다....
+		Supplier<Integer> s1 = ()->(int)(Math.random()*6);
+		System.out.println(s1.get());
+	}
+}
+
+/* 함수형인터페이스 	표현	 			메서드
+ * Consumer		T -> void		void accept(T t)
+ * */
+ 

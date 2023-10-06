@@ -1,0 +1,16 @@
+package ex06;
+
+import java.util.Arrays;
+
+public class ForSaim {
+	public static void main(String[] args) {
+		System.out.println("사임이가 집가고싶다라고 몇 번 말했는지 세어보겠습니다!");
+		
+		String str = "집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어집가고싶어";
+		String[] strArr = str.split("집가고싶어");
+		for(String s : strArr)
+			System.out.println(s);
+//		int num = (int) Arrays.stream(strArr).count();
+//		System.out.println(num);
+	}
+}

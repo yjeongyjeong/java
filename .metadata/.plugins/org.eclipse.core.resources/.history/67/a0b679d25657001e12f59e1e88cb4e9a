@@ -1,0 +1,18 @@
+package ex01;
+
+public class TVTest {
+	public static void main(String[] args) {
+		TV tv = new TV();
+		tv.channel = 7;
+		tv.channelDown();
+		
+		System.out.println(tv.channel);
+		//7에서 --되어서 6으로 출력됨
+		
+		TV tv2 = new TV();
+		System.out.println(tv2.channel);
+		// 0 출력됨 tv와 별개!! 마치 int a = 1; int b =3;과 같이 클래스는 같지만 변수가 다름! 저장된 값도 다름!
+		
+		TV tv3;
+	}
+}

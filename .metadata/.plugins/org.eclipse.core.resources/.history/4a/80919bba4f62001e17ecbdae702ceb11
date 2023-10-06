@@ -1,0 +1,7 @@
+package ex01;
+class Outer3{
+	
+}
+public class MemberInnerClass {
+
+}

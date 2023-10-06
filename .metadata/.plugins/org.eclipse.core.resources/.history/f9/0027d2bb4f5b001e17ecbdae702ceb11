@@ -1,0 +1,16 @@
+package ex01;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class ReadExample3 {
+	public static void main(String[] args) throws IOException {
+		Reader reader = new FileReader("c:/data/test3.txt");
+		
+		while(true) {
+			int read = reader.read();
+		}
+	}
+}

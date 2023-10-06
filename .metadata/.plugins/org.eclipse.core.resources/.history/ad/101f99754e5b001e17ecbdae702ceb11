@@ -1,0 +1,9 @@
+package ex01;
+
+import java.io.FileWriter;
+
+public class WriteExample3 {
+	public static void main(String[] args) {
+		new FileWriter("c:/data/temp3.txt");
+	}
+}

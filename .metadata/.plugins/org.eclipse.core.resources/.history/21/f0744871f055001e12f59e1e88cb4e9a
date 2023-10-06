@@ -1,0 +1,17 @@
+package ex02;
+
+public class Exam05 {
+	public static void main(String[] args) {
+		int A = 100;
+		int B = 50;
+		int C = 10;
+		
+		if( A>B) {
+			if(A>C) {
+				System.out.println("Max : " + A);
+			} else { 
+				System.out.println("Max : " + C);
+			}
+		} 
+	}
+}

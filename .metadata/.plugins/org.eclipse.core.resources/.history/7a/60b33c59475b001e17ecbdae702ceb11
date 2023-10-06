@@ -1,0 +1,26 @@
+package ex01;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
+public class WriteExample {
+
+	public static void main(String[] args) {
+		//타입이 다른데 받을 수 있는건 상속관계라는 의미(클래스 혹은 인터페이스)
+		try {
+			OutputStream os = new FileOutputStream("c:/data/test1.db");
+			byte a = 10;
+			byte b = 20;
+			byte c = 30;
+			
+			os.write(a);
+			os.write(b);
+			os.write(c);
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

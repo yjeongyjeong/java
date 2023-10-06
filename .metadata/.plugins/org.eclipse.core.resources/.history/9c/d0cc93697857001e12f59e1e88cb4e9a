@@ -1,0 +1,11 @@
+package ex08_singleton;
+
+public class A {
+	int number; //default
+	private int number2; //현재 클래스에서는 접근 가능
+	public int number3; 
+	
+	void add() {
+		number2 = 2;
+	}
+}

@@ -1,0 +1,6 @@
+package ex05;
+
+public class Car {
+	private Tire tire1 = new Tire();
+	private Tire2 tire2 = new Tire();
+}

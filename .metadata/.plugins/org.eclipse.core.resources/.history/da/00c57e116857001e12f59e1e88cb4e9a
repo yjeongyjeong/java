@@ -1,0 +1,18 @@
+package ex06_static;
+
+public class CalculatorExam {
+
+	public static void main(String[] args) {
+		Calculator cal = new Calculator();
+		cal.add(10, 20);
+		System.out.println(cal.result);
+
+		//정적 메소드는 생성자 없이도 만들 수 있다!
+		cal.sub(10, 5);
+		System.out.println(cal.minus);
+		
+		Calculator.sub(50, 40);
+		System.out.println(Calculator.minus);
+	}
+
+}

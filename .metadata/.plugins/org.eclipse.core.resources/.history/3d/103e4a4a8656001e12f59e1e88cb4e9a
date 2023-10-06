@@ -1,0 +1,22 @@
+package ex02;
+
+public class Exam15 {
+	public static void main(String[] args) {
+		addition(3,4);
+		int result = subtraction(5,2);
+	}
+
+	private static void subtraction(int i, int j) {
+		System.out.println("더하기 : "+ (i+j));;
+	}
+
+	private static void addition(int i, int j) {
+	}
+}
+
+
+/*
+ * 아래처럼 출력되도록하기 
+ * 더하기 : 7 빼기 : 3
+ * 
+ */

@@ -1,0 +1,29 @@
+package ex02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class Person{
+	public Person() {
+		System.out.println("*****************");
+	}
+}
+public class SetCollection {
+	public static void main(String[] args) {
+//		List<String> list = new LinkedList<String>();
+		
+		Set<String> list = new HashSet<String>();
+		
+		list.add("Toy");
+		list.add("Box");
+		list.add("Robot");
+		list.add("Box");
+
+		for(String s : list)
+			System.out.println(s);
+		System.out.println("------------------");
+
+
+	}
+}

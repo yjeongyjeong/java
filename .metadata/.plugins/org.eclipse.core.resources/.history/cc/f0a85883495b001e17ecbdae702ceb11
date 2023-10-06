@@ -1,0 +1,13 @@
+package ex01;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+public class ReadExample2 {
+
+	public static void main(String[] args) {
+
+		InputStream is = new FileInputStream("c:/data/test2.db");
+	}
+
+}

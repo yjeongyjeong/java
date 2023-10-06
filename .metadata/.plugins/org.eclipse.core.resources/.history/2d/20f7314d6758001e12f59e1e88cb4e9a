@@ -1,0 +1,6 @@
+package bookMarket;
+
+public class CartItem {
+private String[] itemBook = new String[7];
+
+}

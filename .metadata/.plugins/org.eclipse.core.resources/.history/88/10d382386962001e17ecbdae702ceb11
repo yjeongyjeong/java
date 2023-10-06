@@ -1,0 +1,46 @@
+package ex06;
+
+//람다식 연습!
+
+@FunctionalInterface
+interface PrintV {
+	void printVar(String name, int i);
+}
+/* 람다를 사용하지 않으면 하위클래스에서 오버라이드한것을 사용하는것과 같음 
+ * class A implements PrintV{
+	@Override
+	public void printVar(String name, int i) {
+		System.out.println(name +"=" +i);
+	}
+}
+ */
+
+
+@FunctionalInterface
+interface SquareMake {
+	int square(int x);
+}
+@FunctionalInterface
+interface InterRoll {
+	int roll();
+}
+@FunctionalInterface
+interface SumCal {
+	int sumArr(int[] arr);
+}
+public class Lambda6 {
+	public static void main(String[] args) {
+		PrintV pv = (String name, int i) -> System.out.println(name +" = " +i);
+		pv.printVar("람다식 사용", 100);
+		SquareMake sq = x -> x*x;
+		InterRoll ir = () -> (int)(Math.random()*6);
+		
+		SumCal sc = (arr) -> {	int sum = 0;
+										for(int i : arr)
+										sum += i;
+										return sum;
+									};
+	}
+
+}
+

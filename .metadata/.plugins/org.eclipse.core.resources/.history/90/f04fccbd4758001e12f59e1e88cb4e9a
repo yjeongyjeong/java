@@ -1,0 +1,15 @@
+package ex07_interface;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Printable prn = new LPrinter();
+		//상위 클래스인 Printable은 자기 자신에게만 접근 가능한데 자신이 갖고있는 메서드를 Printer에서 오버라이딩했으므로 Printer(하위)에서 접근이 가능함
+		
+		String msg = "Hello World";
+		prn.print(msg);
+		
+		prn = new SPrinter();
+		prn.print(msg);
+		
+	}
+}

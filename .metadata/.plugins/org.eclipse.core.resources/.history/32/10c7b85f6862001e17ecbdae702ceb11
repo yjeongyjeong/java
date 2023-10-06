@@ -1,0 +1,32 @@
+package ex06;
+
+@FunctionalInterface
+interface PrintV {
+	void printVar(String name, int i);
+}
+@FunctionalInterface
+interface SquareMake {
+	int square(int x);
+}
+@FunctionalInterface
+interface InterRoll {
+	int roll();
+}
+@FunctionalInterface
+interface SumCal {
+	int sumArr(int[] arr);
+}
+public class Lambda6 {
+	public static void main(String[] args) {
+//		PinrtV pv = (name, i)-> System.out.println(name+"=" + i);
+		SquareMake sq = x -> {return x*x;	};
+		InterRoll ir = () -> {	return (int)(Math.random()*6);	};
+		SumCal sc = (int[] arr) -> {	int sum = 0;
+										for(int i : arr)
+										sum += i;
+										return sum;
+									};
+	}
+
+}
+

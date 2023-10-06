@@ -1,0 +1,16 @@
+package ex09_inher02;
+
+public class Example01 {
+	public static void main(String[] args) {
+
+		BabyCat catObj = new BabyCat("샴 고양이", "초콜릿색");
+		
+		catObj.eat();
+		catObj.meow();
+
+		BabyCat2 catObj = new BabyCat2("샴 고양이", "초콜릿색");
+		
+		catObj.eat();
+		catObj.meow();
+	}
+}

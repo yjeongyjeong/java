@@ -1,0 +1,29 @@
+package ex01;
+
+import java.util.List;
+
+public class Ex01_sol {
+public static void main(String[] args) {
+
+	Person2 p1 = new Person2("나나나", 20);
+	Person2 p2 = new Person2("나나나", 20);
+	System.out.println(p1.equals(p2)); //false
+	System.out.println(p1.toString()); //주소값이 나옴 이걸 내용이 나오도록 바꾸려면
+	System.out.println(p1.toString());
+
+}
+}
+class Person2{
+	String name;
+	int age;
+	public Person2(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Person2 [성명 = " + name + ", 나이 = " + age + "]";
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package ex06_static;
+//객체 생성없이 접근가능
+
+public class Calculator_staticTest {
+	public static void main(String[] args) {
+//		Calculator.minus = 100;
+		System.out.println(Calculator.minus);
+	}
+}

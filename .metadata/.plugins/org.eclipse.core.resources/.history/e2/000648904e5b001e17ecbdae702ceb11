@@ -1,0 +1,15 @@
+package ex01;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
+public class WriteExample3 {
+	public static void main(String[] args) {
+		try {
+			Writer writer = new FileWriter("c:/data/temp3.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

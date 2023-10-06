@@ -1,0 +1,9 @@
+package ex02;
+class apple{
+	public String toString() {
+		return "I an an apple";
+	}
+}
+public class Generices1 {
+
+}

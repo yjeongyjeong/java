@@ -1,0 +1,33 @@
+package ex02;
+
+interface Printable{
+	void print();
+}
+
+class Papers{
+	private String con;
+	public Papers(String con) { this.con = con;	}
+	
+	public Printable getPrinter() {
+		return new Printer();
+	}
+	
+	private class Printer implements Printable{
+		@Override
+		public void print() {
+			System.out.println(con);
+		}
+	}
+}
+
+public class UseMemberInnerClass {
+	public static void main(String[] args) {
+		Papers p = new Papers("프린터로 메세지 출력해주세요.");
+		
+		Printable prn = p.getPrinter();
+		prn.print();
+		
+//		내가 생각한 장점 : papers 객체 내의 클래스에 원래는 바로 접근할 수가 없는데 인터페이스를 구현한 클래스에서 인터페이스 형태로 객체를 만들게되면 papers 객체에 바로 접근이 가능한....? 동시에 아래 클래스를 사용할 수 있는 기분...?
+//		원래는 papers객체를 만들고 
+	}
+}

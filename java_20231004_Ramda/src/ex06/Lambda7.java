@@ -1,0 +1,36 @@
+package ex06;
+
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+
+//java에서 제공하는 함수형 인터페이스 연습! => 인터페이스를 만들지 않고도 간단하게 재정의하여 사용할 수 있음
+
+//@FunctionalInterface
+//interface PrintV {
+//	void printVar(String name, int i);
+//}
+
+
+public class Lambda7 {
+	public static void main(String[] args) {
+//		Consumer<String> con = name -> System.out.println(name);
+
+		//		혹은 익명의 클래스
+		Consumer<String> con = new Consumer<String>() {
+			@Override
+			public void accept(String name) {
+				System.out.println(name);
+			}
+		};
+		con.accept("Hello!");
+		
+//		매개변수를 두 개 받는 함수형 인터페이스	
+		BiConsumer<String, Integer> bicon = (name, age) -> System.out.println(name+" => " + age);
+		bicon.accept("Andy", 45);
+	}
+}
+
+/* 함수형인터페이스 	표현	 			메서드
+ * Consumer		T -> void		void accept(T t)
+ * */
+ 

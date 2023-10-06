@@ -1,0 +1,22 @@
+package ex08;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor 
+//@NoArgsConstructor 기본생성자?
+class Car{
+	private String model;
+	private String color;
+}
+
+public class SetCollection3 {
+	public static void main(String[] args) {
+		
+	}
+}

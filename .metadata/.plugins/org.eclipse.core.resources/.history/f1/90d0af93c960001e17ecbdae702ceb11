@@ -1,0 +1,11 @@
+package com.movie;
+
+public class AdminMenu extends AbstractMenu{
+
+	private static final AdminMenu instance = new AdminMenu(null);
+	public AdminMenu(Menu prevMenu) {
+		super(menuText, prevMenu);
+		// TODO Auto-generated constructor stub
+	}
+
+}

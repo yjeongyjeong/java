@@ -1,0 +1,31 @@
+package ex02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class Person{
+	public Person() {
+		System.out.println("*****************");
+	}
+	@Override
+	public int hashCode() {
+		System.out.println("hash----------------");
+		return super.hashCode();
+	}
+}
+public class SetCollection {
+	public static void main(String[] args) {
+//		List<String> list = new LinkedList<String>();
+		
+		Set<Person> list = new HashSet();
+		
+		list.add(new Person());
+		list.add(new Person());
+		list.add(new Person());
+		list.add(new Person());
+
+
+
+	}
+}

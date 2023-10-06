@@ -1,0 +1,14 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class Exam01 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		// 정수가 아니라 문자나 문자열을 입력하는 경우 오류남
+		String str = sc.nextLine(); // 숫자 입력하면 오류남
+		System.out.println(str);
+		System.out.println(number);
+	}
+}

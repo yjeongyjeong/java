@@ -1,0 +1,22 @@
+package ex02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class PriceInfo{
+	private String model;
+	private int price;
+	
+	public PriceInfo(String model, int price) {
+		this.model = model;
+		this.price = price;
+	}
+	public int getPrice() { return price; }
+}
+
+public class StreamExam02 {
+	public static void main(String[] args) {
+		List<PriceInfo> lists = new ArrayList<PriceInfo>();
+//		어떤 대상이든 상관없이 데이터의 주소가 배열에 들어감 (대상을 제한하려면 위 코드처럼 <받을애> 해줌)
+	}
+}

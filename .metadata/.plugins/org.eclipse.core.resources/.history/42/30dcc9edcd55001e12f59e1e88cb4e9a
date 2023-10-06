@@ -1,0 +1,13 @@
+package ex01;
+
+public class Hello {
+
+	public final int max;
+	
+	public static void main(String[] args) {
+		Hello h = new Hello();
+		
+		System.out.println(h.max);
+	}
+
+}

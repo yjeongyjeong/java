@@ -1,0 +1,25 @@
+package ex08_409_no7;
+
+public class DaoExample {
+
+	public static void dbWork(DataAccessObject dao) {
+		dao.select();
+		dao.insert();
+		dao.update();
+		dao.delete();
+	}
+//main메서드에서 dbwork메소드를 호출할 떄 oracle과 mysql을 매개로 주고 호출햇음
+//dbwork메서드는 두 객체를 모두 받기 위해 dataaccessobject타입의 매개변수를 가지고 있음
+//실행결과를 보고 dataacessobject인터페이스와 oracledao, mysqldao구현 클래스 작성
+	public static void main(String[] args) {
+		dbWork(new OracleDao());
+		dbWork(new MySqlDao());
+	}
+	
+	/* 나의 풀이->  dbWork는 인터페이스를 매개변수(dao)로 받으니까 인터페이스내에 일단 네 가지 기능이 구현되어 있어야 함
+	 * 따라서 data어쩌고 인터페이스를 만들고 4개의 메서드?를 구현함
+	 * 메서드 타입은 내가 정해야 하는데 결과 출력해야하니까 void로 해서 sysout을 통해 출력하게 함
+	 * OracleDao와 MySqlDao는 
+	 * 
+	 * */
+}

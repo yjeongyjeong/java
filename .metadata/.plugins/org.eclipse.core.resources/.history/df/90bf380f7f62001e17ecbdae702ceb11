@@ -1,0 +1,31 @@
+package ex06;
+
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntConsumer;
+
+@FunctionalInterface
+interface InterRoll2 {
+	int roll();
+}
+class Ddd2 implements InterRoll2{
+
+	@Override
+	public int roll() {
+		return (int)(Math.random()*100+1);
+	}
+	
+}
+
+
+public class Lambda8 {
+	public static void main(String[] args) {
+		Ddd2 dd = new Ddd2();
+	}
+}
+
+/* 함수형인터페이스 	표현	 			메서드
+ * Consumer		T -> void		void accept(T t)
+ * */
+ 

@@ -1,0 +1,10 @@
+package ex05;
+
+public class Car {
+	private Tire tire1 = new Tire();
+	private Tire tire2 = new Tire() {
+		public void roll() {
+			System.out.println("익명 타이어가 굴러감..");
+		};
+	}
+}

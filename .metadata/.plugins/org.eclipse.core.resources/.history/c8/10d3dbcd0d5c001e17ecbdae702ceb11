@@ -1,0 +1,22 @@
+package ex01;
+
+class Box<T>{
+	private T ob;
+	public void set(T ob) {
+		this.ob = ob;
+	}
+	public T get() {
+		return this.ob;
+	}
+}
+
+class BoxFactory{
+	public static Box<T> makeBox(T o){
+		Box<T> box = new Box<T>();
+	}
+}
+public class GenericMethodExample {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,16 @@
+package ex01;
+
+public class Ex01_StringBuffer {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("Hello ");
+		sb.append("Programming"); //hello에 문자열 programming추가
+		System.out.println(sb);
+		
+		sb.insert(6, "java ");
+		System.out.println(sb);
+		
+		sb.replace(1, 4, "Good");
+		System.out.println(sb);
+		
+	}
+}

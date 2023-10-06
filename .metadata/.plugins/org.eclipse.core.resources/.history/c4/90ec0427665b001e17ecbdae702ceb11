@@ -1,0 +1,44 @@
+package ex02;
+
+class Apple {
+	public String toString() {
+		return "I an an apple";
+	}
+}
+
+class Orange {
+	public String toString() {
+		return "I am an orange";
+	}
+}
+
+class AppleBox { // 사과 담는 박스
+	private Apple ap;
+
+	void setApple(Apple ap) {
+		this.ap = ap;
+	}
+
+	Apple getApple() {
+		return ap;
+	}
+}
+
+class OrangeBox { // 오렌지 담는 박스
+	private Orange op;
+
+	void setOrange(Orange op) {
+		this.op = op;
+	}
+
+	Orange getOrange() {
+		return op;
+	}
+}
+
+public class Generices1 {
+	public static void main(String[] args) {
+		AppleBox abox = new AppleBox();
+		OrangeBox obox = new OrangeBox();
+	}
+}

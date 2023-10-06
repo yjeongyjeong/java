@@ -1,0 +1,29 @@
+package ex01_3;
+
+
+class Box<T> {
+	private T ob;
+	public Box( T ob) {
+		this.ob = ob;
+	}
+	public void set(T ob) {
+		this.ob = ob;
+	}
+
+	public T get() {
+		return this.ob;
+	}
+}
+class SteelBox<T> extends Box<T>{
+	public SteelBox(T ob) {
+//		여기서 받은 ob값을 Box에 전달하기
+		super(ob);
+		
+	}
+}
+
+public class GenericMethodExample {
+	public static void main(String[] args) {
+		
+	}
+}

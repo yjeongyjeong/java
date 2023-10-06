@@ -1,0 +1,5 @@
+package ex10;
+
+public class 전화번호명단 {
+	대학동창 조조 = new 대학동창();
+}

@@ -1,0 +1,11 @@
+package ex01;
+
+import java.io.FileOutputStream;
+
+public class WriteExample {
+
+	public static void main(String[] args) {
+		new FileOutputStream("C:/data/test1.db");
+	}
+
+}

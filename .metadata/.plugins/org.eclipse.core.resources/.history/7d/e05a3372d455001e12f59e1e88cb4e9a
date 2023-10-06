@@ -1,0 +1,19 @@
+package ex01;
+
+public class Hello {
+
+	public final int MAX;
+	public Hello() {
+		MAX = 100;
+	}
+	
+	public static void main(String[] args) {
+		Hello h = new Hello();
+		
+		System.out.println(h.MAX);
+		System.out.printf("정수 : %3d 실수 : %f 문자열 : %s\n", 100, 10.2, "aaa");
+		System.out.printf("정수 : %3d 실수 : %f 문자열 : %s\n", 10, 10.2, "aaa");
+		System.out.printf("정수 : %3d 실수 : %f 문자열 : %s\n", 1, 10.2, "aaa");
+	}
+
+}

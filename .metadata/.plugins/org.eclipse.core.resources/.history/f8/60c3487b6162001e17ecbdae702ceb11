@@ -1,0 +1,18 @@
+package ex06;
+
+interface Printable3 {
+	void print(String msg);
+}
+
+public class Lambda3 {
+	public static void main(String[] args) {
+		// new printable3일게 뻔하니까.. 이름을 지움
+		// 오버라이딩된것도 지우고 내용만 받아서 바꿈
+		Printable3 prn =  
+				() ->{
+					System.out.println(msg);
+				};
+		
+		prn.print("msg print3");		
+	}
+}

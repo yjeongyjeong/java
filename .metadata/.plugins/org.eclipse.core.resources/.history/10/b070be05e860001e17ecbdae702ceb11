@@ -1,0 +1,17 @@
+package com.movie;
+
+import java.io.File;
+
+public class Reservation {
+	private long id; //발급 번호
+	private long movieId; //영화 대표값
+	private String movieTitle; //영화 제목
+	private String seatName; //좌석 명
+
+	private static final File file = new File("reservation.txt");
+	
+	public static Reservation findById(String nextLine) {
+		return null;
+	}
+
+}

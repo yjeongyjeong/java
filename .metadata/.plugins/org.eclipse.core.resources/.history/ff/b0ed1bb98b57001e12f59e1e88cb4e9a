@@ -1,0 +1,9 @@
+package ex09_inher02;
+
+public class ParentCat {
+	public String breed;
+	
+	void eat() {
+		System.out.println("EATING");
+	}
+}

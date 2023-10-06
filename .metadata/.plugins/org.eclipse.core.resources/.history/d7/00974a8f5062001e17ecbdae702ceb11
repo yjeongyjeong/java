@@ -1,0 +1,31 @@
+package ex01;
+class Outer3{
+	private int num = 0;
+	class Member{
+		void add(int n) { num += n; } //this로 num에 접근할 수 없음...
+		int get() { return num; }
+	}
+}
+
+class Outer4{
+	private int num = 0;
+	class Member{
+		void add(int n) { num += n; } 
+		int get() { return num; }
+	}
+}
+public class MemberInnerClass {
+
+	public static void main(String[] args) {
+		//아까와 달리 static이 아니지만 class Member 안에 같은게 두개있음
+//		또한 얘는 member 클래스 객체를 사용하고 싶어서 객체를 만들려고 해도 num이 outer에 있으니까 outer객체를 먼저 만들고 member 객체를 만들어줘야 함
+		
+		Outer3 o1 = new Outer3();
+		Outer3 o2 = new Outer3();
+		
+//		Outer3.Member why = new Outer3(). : member가 안나옴
+		Outer3.Member m1 = o1.new Member();
+		Outer3.Member m2 = o1.new Member();
+		
+	}
+}

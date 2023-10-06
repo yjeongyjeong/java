@@ -1,0 +1,11 @@
+package com.movie;
+
+import java.util.List;
+
+public class Seats {
+
+	public Seats(List<Reservation> reservations) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

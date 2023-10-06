@@ -1,0 +1,11 @@
+package ex02;
+
+class Student{
+	private String name;
+	private int java;
+}
+public class StudentStream {
+	public static void main(String[] args) {
+		
+	}
+}

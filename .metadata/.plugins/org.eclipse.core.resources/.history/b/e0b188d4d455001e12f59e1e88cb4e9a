@@ -1,0 +1,19 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("정수 입력 >> ");
+		int number = scan.nextInt();
+		/* 
+		코드 작성
+		*/
+		
+		//출력은
+		System.out.println("1시간 6분 40초");
+	}
+
+}

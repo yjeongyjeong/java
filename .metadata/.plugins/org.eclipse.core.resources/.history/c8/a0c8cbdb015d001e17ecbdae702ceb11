@@ -1,0 +1,8 @@
+package ex11;
+
+
+public class LinkedListQueue{
+	public static void main(String[] args) {
+
+	}
+}

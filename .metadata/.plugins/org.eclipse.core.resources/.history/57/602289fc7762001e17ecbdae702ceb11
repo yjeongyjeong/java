@@ -1,0 +1,24 @@
+package ex06;
+
+//람다식 연습!
+
+@FunctionalInterface
+interface PrintV {
+	void printVar(String name, int i);
+}
+
+
+public class Lambda7 {
+	public static void main(String[] args) {
+		PrintV pv = (name, i) -> System.out.println(name +" = " +i);
+		pv.printVar("람다식 사용", 100);
+		
+	}
+}
+
+/* 근데 람다식 사용하려면 매번 인터페이스 만들기 귀찮으니까 java에서 만들어줌 => 함수형 인터페이스
+ * () -> T 로 표현해서 T get() 메서드를 만들어줌 여기서 T는 제너릭이라 모든타입가능 
+ * 
+ *
+ * */
+ 

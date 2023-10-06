@@ -1,0 +1,44 @@
+package ex02;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ReduceExam {
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+		
+		Integer sum = numbers.stream()
+		.reduce(0, (a,b) -> a+b);
+		System.out.println("sum : " + sum);
+//		0이랑 1이 들어와서 3이되고 2가 들어와서 5가 되고 ... -> 두개의 값으로 하나씩 줄여나감
+		//BinaryOperator : type T의 인자 두 개를 받고 동일한 type T 객체를 리턴하는 함수형 인터페이스
+//		합치는 과정에서 타입이 바뀔경우 사용. map+reduce로 대체 가능하다
+		
+		System.out.println("-------------------");
+		List<String> words = Arrays.asList("apple", "banana", "cherry","dete","elderberry");
+		
+		Integer totalLength = words.stream()
+		.map(s -> s.length()) // s를 s의 길이로 바꾼다
+		.reduce(0, (a,b)-> a+b); // 처음에 0으로 시작해서 apple의 5와 만나서 0+5 의 값이 a가 되고 그 다음 banana를 만나서 5+6 ... 으로 진행
+		System.out.println(totalLength);
+		System.out.println("-------------------");
+		
+		List<Integer> nums = new ArrayList<Integer>();
+		for(int i = 0; i < 10 ; i++) {
+			nums.add((int)(Math.random()*100));
+		}
+		
+		for (Integer integer : nums) {
+			System.out.println(integer);
+		}
+		
+		Integer max = nums.stream()
+		.reduce(Integer.MIN_VALUE, (a,b)->Integer.max(a, b));
+		System.out.println("max : " + max);
+		
+		
+		
+		
+	}
+}

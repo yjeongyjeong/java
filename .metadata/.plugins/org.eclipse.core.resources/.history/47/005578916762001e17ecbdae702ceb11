@@ -1,0 +1,17 @@
+package ex06;
+
+@FunctionalInterface
+interface PrintV {
+	void printVar(String name, int i);
+}
+@FunctionalInterface
+interface SquareMake {
+	int square(int x);
+}
+
+public class Lambda6 {
+	public static void main(String[] args) {
+		PinrtV pv = (name, i)-> System.out.println(name+"=" + i);	
+
+	}
+}

@@ -1,0 +1,50 @@
+package ex04;
+
+import java.util.Scanner;
+
+public class MainClass extends Student {
+	public static void main(String[] args) {
+		/*
+		 * 학생배열 생성 후 3명의 정보 입력 학생정보 출력 학생전체 총점 및 평균 출력
+		 */
+
+		Student stu1 = new Student();
+		stu1.setName("가가가");
+		stu1.setAge(20);
+		stu1.setKor(99);
+		stu1.setEng(80);
+		stu1.setMath(75);
+
+		Student stu2 = new Student();
+		stu2.setName("나나나");
+		stu2.setAge(20);
+		stu2.setKor(45);
+		stu2.setEng(76);
+		stu2.setMath(10);
+
+		Student stu3 = new Student();
+		stu3.setName("다다다");
+		stu3.setAge(20);
+		stu3.setKor(75);
+		stu3.setEng(12);
+		stu3.setMath(78);
+
+		String[] st1 = { stu1.getName(), stu1.getAge() + "", stu1.getKor() + "", stu1.getEng() + "",
+				stu1.getMath() + "" };
+		String[] st2 = { stu2.getName(), stu2.getAge() + "", stu2.getKor() + "", stu2.getEng() + "",
+				stu2.getMath() + "" };
+		String[] st3 = { stu3.getName(), stu3.getAge() + "", stu3.getKor() + "", stu3.getEng() + "",
+				stu3.getMath() + "" };
+
+		for (int i = 0; i < st1.length; i++) 
+			System.out.print(st1[i]+ " ");
+		System.out.println();
+		for (int i = 0; i < st1.length; i++) 
+			System.out.print(st2[i]+ " ");
+		for (int i = 0; i < st1.length; i++) 
+			System.out.print(st3[i]+ " ");
+
+
+	}
+
+}

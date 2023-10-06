@@ -1,0 +1,20 @@
+package ex02;
+
+interface printable{
+	void print();
+}
+
+class Papers{
+	private String con;
+	public Papers(String con) { this.con = con;	}
+	public printable getPrinter() {
+		return new Printer();
+	}
+	private class Printer implements printable{
+		
+	}
+}
+
+public class UseMemberInnerClass {
+
+}

@@ -1,0 +1,9 @@
+package ex10;
+
+public class 직장동료 extends 사람 {
+	String 부서명;
+	public 직장동료() {
+		
+	}
+
+}

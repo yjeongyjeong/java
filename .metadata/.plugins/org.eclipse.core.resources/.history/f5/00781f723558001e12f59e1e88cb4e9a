@@ -1,0 +1,23 @@
+package ex05;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		A a = new A();
+		a.funcA();
+		
+		//extend A
+		B b = new B();
+		b.funcB();
+		b.funcA();
+		
+		//extend B
+		C c = new C();
+		c.funcA();
+		c.funcB();
+		c.funcC();
+		System.out.println("=================");
+		
+		A aa = new B();
+	}
+}

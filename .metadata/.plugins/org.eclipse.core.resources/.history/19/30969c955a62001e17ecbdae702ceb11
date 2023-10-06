@@ -1,0 +1,44 @@
+package ex04;
+
+interface Printable{
+	void print();
+}
+// 익명 클래스 : 클래스내의 기능을 수행할뿐이지 굳이 클래스 이름을 불러와서 다른 기능을 수행할 필요가 없는 경우
+// 예를 들어 이전 로컬 클래스에서 printer는 내부에서 println(con)이 목적일 뿐 클래스로 구현할 필요는 없음 
+// 그렇다고 return new Printable(); 를 하기엔 인터페이스라서 객체 생성 불가능
+// 이 때 익명 클래스를 사용!! 
+class Papers{
+				//	Printer p = new Printer(); 에러남
+	private String con;
+	public Papers(String con) { this.con = con;	}
+	
+	public Printable getPrinter() {
+
+		return new Printable() { // 익명 클래스 : 클래스 이름없이 간단한 기능을 구현
+//			인터페이스 내의 기능을 구현시켜서 내가 원하는 행동이 동작하도록 할 수 있음
+			@Override
+			public void print() {
+				System.out.println(con);
+			}
+		};
+	}
+}
+
+public class UseLocalInnerClass {
+	public static void main(String[] args) {
+		Papers p = new Papers("프린터로 메세지 출력해주세요.");
+		
+		Printable prn = p.getPrinter();
+		prn.print();
+				
+	}
+}
+
+
+/*
+ * 1. 프로그램 내에서 일시적으로(단발성으로) 한번만 사용되어야 하는 객체일 경우
+   -> UI 이벤트처리, 스레드 객체 등 (단발성 이벤트 처리)
+2. 재사용성이 없고, 확장성을 활용하는 것이 유지보수에서 더 불리할 때
+  -> 비즈니스 로직이 정말 재각각이며, 재사용성이 전혀없어 매번 클래스를 생성해야하는 비용이 더 많을때
+ * */
+ */

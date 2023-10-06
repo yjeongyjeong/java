@@ -1,0 +1,7 @@
+package ex09_inher;
+
+public class PhoneExam01 {
+	public static void main(String[] args) {
+		Phone p = new Phone();
+	}
+}

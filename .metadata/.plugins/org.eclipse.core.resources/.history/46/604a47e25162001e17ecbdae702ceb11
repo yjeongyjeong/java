@@ -1,0 +1,31 @@
+package ex02;
+
+class Outer{
+	private static int num = 0;
+	
+	public Outer() {
+		System.out.println("----------------------");
+	}
+	
+	static class Nested1{
+		void add(int n) { num += n ; }
+		// n : 현 메서드 안에서만 존재하는 지역변수
+		// num : static이 붙어잇는 멤버변수
+	}
+	static class Nested2{
+		int get() { return num ; }
+	}
+}
+
+public class StaticNestedClass {
+	public static void main(String[] args) {
+//		outer 내의 static 클래스에 접근하고 싶다면 어차피 둘 다 스태틱이니까 바로 내부 클래스에 접근해서 객체를 생성할 수 있음
+		Outer.Nested1 nst1 = new Outer.Nested1();
+		nst1.add(5);		
+		
+		Outer.Nested2 nst2 = new Outer.Nested2();
+		System.out.println(nst2.get());
+		
+//		사실.. 잘 이해 안가지만.. outer객체 생성된게아니라 그냥 사용할 수 있게 만들어진거라고 설명하심 왜냐면 outer에 있는 "------"이게 없으니까... 근데 먼말인지 모르겠다
+	}
+}

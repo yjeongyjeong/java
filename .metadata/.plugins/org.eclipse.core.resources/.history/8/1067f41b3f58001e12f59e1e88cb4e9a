@@ -1,0 +1,35 @@
+package ex05;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		A a = new A();
+		a.funcA();
+		
+		//extend A
+		B b = new B();
+		b.funcB();
+		b.funcA();
+		
+		//extend B
+		C c = new C();
+		c.funcA();
+		c.funcB();
+		c.funcC();
+		System.out.println("=================");
+		
+		//상위타입에서 하위타입으로 만들어주면 A에 있는 애들에게만 접근가능 B에 접근하려면 B에 오버라이딩된게 있어야 함 => B클래스가 A 클래스에 있는 funcA메서드를 재정의 하면 그 때는 B 클래스 내의 funcA가 실행됨
+		A aa = new B();
+		aa.funcA(); // A 클래스 내의 A메서드 출력
+		
+		B bb = (B)aa;
+		
+		/*
+		 * A a1 = new A
+		 * A a2 = new B
+		 * 
+		 * B b1 = (B)a1 -> 불가능
+		 * B b2 = (B)a2 ->가능 => a2는 B의 기능은 이용할 수 없지만 B 속에 있는 A 타입의 a2 객체
+		 * */
+	}
+}

@@ -1,0 +1,17 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class Exam01 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		int number = sc.nextInt();
+
+		System.out.println(str);
+		System.out.println(number);
+//sc.nextInt이후 nextLine 하면 sc에 num의 값이 저장되어있기 때문에 str은 입력되지 않음
+//반대순서는 둘다 입력됨
+		
+	}
+}

@@ -1,0 +1,9 @@
+package ex12;
+
+import java.util.Stack;
+
+public class StackExam {
+	public static void main(String[] args) {
+		List<Integer> stack = new Stack<Integer>();
+	}
+}

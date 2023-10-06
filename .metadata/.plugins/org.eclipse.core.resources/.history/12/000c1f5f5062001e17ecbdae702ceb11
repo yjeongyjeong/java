@@ -1,0 +1,19 @@
+package ex01;
+class Outer3{
+	private int num = 0;
+	class Member{
+		void add(int n) { num += n; } //this로 num에 접근할 수 없음...
+		int get() { return num; }
+	}
+}
+
+class Outer4{
+	private int num = 0;
+	class Member{
+		void add(int n) { num += n; } 
+		int get() { return num; }
+	}
+}
+public class MemberInnerClass {
+
+}

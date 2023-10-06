@@ -1,0 +1,9 @@
+package ex02;
+
+import java.util.Arrays;
+
+public class ReduceExam {
+	public static void main(String[] args) {
+		List<Integer> numbers = Arrays.asList(null);
+	}
+}

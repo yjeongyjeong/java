@@ -1,0 +1,14 @@
+package com.movie;
+
+import java.util.List;
+
+public class Seats {
+	public static final int MAX_ROW = 5;
+	public static final int MAX_COL = 9;
+	private String[][] map = new String[MAX_ROW][MAX_COL]; 
+	//5줄 9칸 2차원 배열 생성 map[0][0] ~ map[4],[8]
+	
+	public Seats(List<Reservation> reservations) {
+		
+	}
+}

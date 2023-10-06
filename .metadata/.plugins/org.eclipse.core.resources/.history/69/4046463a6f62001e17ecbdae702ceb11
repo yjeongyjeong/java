@@ -1,0 +1,11 @@
+package ex06;
+
+public class ForSaim {
+	public static void main(String[] args) {
+		System.out.println("사임이가 집가고싶다라고 몇 번 말했는지 세어보겠습니다!");
+		
+		String str = "집가고싶어";
+		String[] strArr = str.split("집가고싶어");
+		System.out.println("정답은 " + (str.length()/5)+"번 입니다~");
+	}
+}

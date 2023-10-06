@@ -1,0 +1,15 @@
+package ex06;
+
+interface Printable4 {
+	void max(int num1, int num2);
+//	void add(int a); 근데 두개면 어케
+}
+
+public class Lambda4 {
+	public static void main(String[] args) {
+		Printable3 prn =  
+				(msg) -> System.out.println(msg);
+		
+		prn.print("msg print3");		
+	}
+}

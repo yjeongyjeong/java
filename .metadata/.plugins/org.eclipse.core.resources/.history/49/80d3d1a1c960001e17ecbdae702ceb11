@@ -1,0 +1,20 @@
+package com.movie;
+
+public class AdminMenu extends AbstractMenu{
+
+	private static final AdminMenu instance = new AdminMenu(null);
+	private static final String ADMIN_MENU_TEXT =
+			"1. 영화 예매하기\n"+
+			"2. 예매 확인하기\n"+
+			"3. 예매 취소하기\n"+
+			"4. 관리자 메뉴로 이동\n"+
+			"q. 종료\n"+
+			"메뉴를 선택하세요 : ";
+			
+			
+	public AdminMenu(Menu prevMenu) {
+		super(menuText, prevMenu);
+		// TODO Auto-generated constructor stub
+	}
+
+}

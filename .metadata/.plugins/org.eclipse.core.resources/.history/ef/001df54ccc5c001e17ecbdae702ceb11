@@ -1,0 +1,8 @@
+package ex02_5;
+
+public class Test {
+public static void main(String[] args) {
+	String test = new String();
+	System.out.println(test);
+}
+}

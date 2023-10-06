@@ -1,0 +1,13 @@
+package ex06;
+//Lambda4의 익명의 클래스를 람다식으로 바꿈
+
+interface Cal2 {
+	int max(int num1, int num2);
+}
+
+public class Lambda5 {
+	public static void main(String[] args) {
+		Cal2 cal = 
+			(num1, num2) ->	num1>num2 ? num1 : num2;	
+	}
+}

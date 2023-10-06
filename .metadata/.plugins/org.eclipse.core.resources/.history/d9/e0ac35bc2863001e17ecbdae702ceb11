@@ -1,0 +1,21 @@
+package ex02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class PriceInfo{
+	private String model;
+	private int price;
+	
+	public PriceInfo(String model, int price) {
+		this.model = model;
+		this.price = price;
+	}
+	public int getPrice() { return price; }
+}
+
+public class StreamExam02 {
+	public static void main(String[] args) {
+		List<PriceInfo> lists = new ArrayList<PriceInfo>();
+	}
+}

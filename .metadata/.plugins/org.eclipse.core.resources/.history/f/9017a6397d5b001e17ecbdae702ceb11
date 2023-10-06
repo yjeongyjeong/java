@@ -1,0 +1,8 @@
+package ex03;
+
+public class Printjob {
+//“ColorType PaperSize Count” 입력받음
+//	ColorType , PaperSize, and Count are each separated by exactly one space.
+	
+	
+}

@@ -1,0 +1,14 @@
+package ex01;
+
+class Outer{
+	private static int num = 0;
+	static class Nested1{
+		void add(int num) { num += n ; }
+	}
+}
+
+public class StaticNestedClass {
+	public static void main(String[] args) {
+		
+	}
+}

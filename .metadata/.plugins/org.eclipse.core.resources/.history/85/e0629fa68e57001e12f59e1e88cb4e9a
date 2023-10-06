@@ -1,0 +1,16 @@
+package ex09_inher02;
+
+public class BabyCat extends ParentCat{
+	
+	public String color;
+	
+//	public BabyCat();를 아래처럼 수정해야 example01에 있는 객체 생성가능
+	public BabyCat(String breed, String color) {
+		super(breed);
+		this.color = color; 
+	}
+	
+	void meow() {
+		System.out.println("MEOW!!!");
+	}
+}

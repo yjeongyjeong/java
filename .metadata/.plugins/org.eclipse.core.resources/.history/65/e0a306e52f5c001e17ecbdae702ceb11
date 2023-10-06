@@ -1,0 +1,32 @@
+package ex02;
+
+class Box<T>{
+	private T ob; //필드
+	public T get() { //getter 메서드 
+		return ob;
+	}
+	public void set(T ob) { //setter 메서드
+		this.ob = ob;
+	}
+	@Override
+	public String toString() {return ob.toString();	}
+}
+
+class Unboxer{
+	public static <T> T openBox(Box<T> box) {
+		return box.get();
+	}
+	public static void peekBox(Box<?> box) {
+		System.out.println(box);
+	}
+}
+
+public class WildCardUnBox {
+	public static void main(String[] args) {
+		Box<String> box = new Box<String>();
+		box.set("Sto Simple String...");
+		Unboxer.peekBox(box);
+		String str = Unboxer.openBox(box);
+		System.out.println("Unboxer.openBox : "+str);
+	}
+}

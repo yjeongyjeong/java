@@ -1,0 +1,31 @@
+package ex02_1;
+
+class Box<T>{
+	private T ob; //필드
+	public T get() { //getter 메서드 
+		return ob;
+	}
+	public void set(T ob) { //setter 메서드
+		this.ob = ob;
+	}
+	@Override
+	public String toString() {return ob.toString();	}
+}
+
+class Unboxer{
+	
+	public static void peekBox(Box<? extends Number> box) { //와일드카드메서드(제네릭과 매우 비슷!)
+		System.out.println(box);
+	}
+}
+
+public class WildCardUnBox {
+	public static void main(String[] args) {
+		Box<Integer> box = new Box<>();
+		box.set(1234);
+		
+		Box<Double> dbox = new Box();
+		dbox.set(12.6);
+		
+	}
+}

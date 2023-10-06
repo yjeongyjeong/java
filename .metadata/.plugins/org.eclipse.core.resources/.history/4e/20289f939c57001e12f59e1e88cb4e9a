@@ -1,0 +1,12 @@
+package ex10;
+
+public class 전화번호명단 {
+	public static void main(String[] args) {
+		대학동창 조 = new 대학동창("조조", 30, "컴퓨터 공학");
+//		조.전공 = "컴퓨터 공학";
+//		조.이름 = "조조";
+//		조.나이 = 30;
+//		System.out.println(조.get이름());
+	}
+
+}

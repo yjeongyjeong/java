@@ -1,0 +1,34 @@
+package ex02;
+
+import java.util.HashSet;
+import java.util.Set;
+
+
+class Personn{
+	private String name;
+	private int age;
+	public Personn(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	public Personn() {};
+	
+}
+
+public class SetCollectionExam {
+	public static void main(String[] args) {
+		Set<Personn> set1 = new HashSet<Person>();
+
+		set1.add(new Personn("홍길동", 20));
+		set1.add(new Personn("아이스", 40));
+		set1.add(new Personn("홍길동", 20));
+		set1.add(new Personn("브레이커스", 37));
+		set1.add(new Personn("왜값이안들어가니", 2));
+		set1.add(new Personn("왜값이안들어가니", 32));
+		set1.add(new Personn("왜값이잘들어가니", 32));
+		
+
+		for(Person p : set1)
+		System.out.println(p.toString());
+	}
+}

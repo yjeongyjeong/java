@@ -1,0 +1,8 @@
+package ex02;
+
+public class Exam06 {
+//로또만들기 : 1~45까지 6개 값 중복안되게 출력
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,28 @@
+package ex01_3;
+
+
+class Box<T> {
+	private T ob;
+
+	public void set(T ob) {
+		this.ob = ob;
+	}
+
+	public T get() {
+		return this.ob;
+	}
+}
+class SteelBox<T> extends Box<T>{
+	public SteelBox(T o) {
+		
+	}
+}
+
+public class GenericMethodExample {
+	public static void main(String[] args) {
+	Box<Integer> sBox = BoxFactory.makeBox(new Integer(9898));
+	//sysout하고 만들어진 데이터(box : 객체)를 sBox가 참조함
+	int n = Unboxer.openBox(sBox); // ->unboxer.openBox(sBox)는 int형태로 나오게 됨(왜냐면 sBox가 Integer로 만들어졌으므로) 따라서 int타입의 변수로 받아줌 
+	System.out.println(n);
+	}
+}

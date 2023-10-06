@@ -1,0 +1,10 @@
+package ex02;
+
+class PriceInfo{
+	private String model;
+	private int price;
+}
+
+public class StreamExam02 {
+
+}

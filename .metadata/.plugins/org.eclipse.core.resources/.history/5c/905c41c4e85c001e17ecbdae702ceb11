@@ -1,0 +1,23 @@
+package ex06;
+
+import java.util.HashSet;
+import java.util.Set;
+
+// 정수나 실수 + 문자열 => 결과는 문자열
+
+class Num{
+	private int num;
+	public Num(int num) { this.num = num; }
+	@Override
+	public String toString() {	return String.valueOf(num) ;}
+	//정수를 문자열로..
+}
+
+public class SetCollection2 {
+	public static void main(String[] args) {
+		Set<Num> set = new HashSet<>();
+		
+		set.add(9999);
+		set.add(8888);
+	}
+}

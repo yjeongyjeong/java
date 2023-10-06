@@ -1,0 +1,14 @@
+package ex08_409_no7;
+
+public interface DataAccessObject {
+
+	String select();
+
+	String insert();
+
+	String update();
+
+	String delete();
+
+
+}

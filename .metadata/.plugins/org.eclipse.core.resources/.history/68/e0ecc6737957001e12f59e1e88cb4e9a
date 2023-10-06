@@ -1,0 +1,9 @@
+package ex08_singleton;
+
+public class SingletonExam {
+
+	/* Signeton에 private가 붙어있어서 생성이 안됨
+	 * Singleton sp = new SingletonExam();
+	 *  sp.apple;
+	 */
+}

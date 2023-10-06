@@ -1,0 +1,15 @@
+package ex01;
+
+class Car extends Vehicle{
+	public Car(String car) {
+		super(car);
+	}
+}
+
+public class Eduwil {
+	public static void main(String[] args) {
+		Car obj = new Car("Spark");
+		
+		System.out.println(obj.getName());
+	}
+}

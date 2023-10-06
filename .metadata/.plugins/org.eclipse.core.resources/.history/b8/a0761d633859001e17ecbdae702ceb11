@@ -1,0 +1,47 @@
+package ex04_myself2;
+
+import java.util.Scanner;
+
+public class MainClass extends Student {
+	public static void main(String[] args) {
+		/*
+		 * 학생배열 생성 후 3명의 정보 입력 학생정보 출력 학생전체 총점 및 평균 출력
+		 */
+		int studentCount = 3;
+		Student[] students = new Student[studentCount];
+
+		// 학생수만큼 학생객체 생성+값넣기+
+		/*
+		 * 원래 student객체에 값을 입력받고 값을 넣어주고 배열을 만들어서 넣은 값을 배열에 넣고 출력해줌
+		 * */
+		
+		for (int i = 0; i < studentCount; i++) {
+			students[i] = new Student();
+//			System.out.println(students[i]); //toString 된 상태로 출력
+			Scanner sc = new Scanner(System.in);
+
+			System.out.println((i + 1) + "번째 학생의 이름을 입력하세요");
+			String name = sc.next();
+			students[i].setName(name);
+			System.out.println((i + 1) + "번째 학생의 나이을 입력하세요");
+			int age = sc.nextInt();
+			students[i].setAge(age);
+			System.out.println((i + 1) + "번째 학생의 국어점수를 입력하세요");
+			int kor = sc.nextInt();
+			students[i].setKor(kor);
+			System.out.println((i + 1) + "번째 학생의 영어점수를 입력하세요");
+			int eng = sc.nextInt();
+			students[i].setEng(eng);
+			System.out.println((i + 1) + "번째 학생의 수학점수을 입력하세요");
+			int math = sc.nextInt();
+			students[i].setMath(math);
+			System.out.println("\n입력이 완료되었습니다.\n");
+		}
+		for(int i = 0; i<studentCount;i++) {
+			students[i].sum();
+			students[i].avg();
+			System.out.println(students[i]);
+		}
+	}
+
+}

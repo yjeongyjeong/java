@@ -1,0 +1,34 @@
+package ex06;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class Lambda9 {
+	public static void main(String[] args) {
+		SumCal sc = (arr) -> {
+			int sum = 0;
+			for (int i : arr)
+				sum += i;
+			return sum;
+		};
+		System.out.println(sc.sumArr(new int[] { 1, 2, 3 }));
+		System.out.println("--------------------");
+		
+//		함수형 인터페이스로 사용해보기
+		Function<int[], Integer> bf = arr -> {
+				int sum = 0;
+				for(int i : arr)
+					sum += i;
+				return sum;
+			};
+			System.out.println(bf.apply(new int[] {1,2,3,4,5}));
+
+	}
+}
+
+/*
+ * 함수형인터페이스 표현 메서드 Consumer T -> void void accept(T t)
+ */
+
+// forEach, removeif 등에서 사용됨

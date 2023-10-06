@@ -1,0 +1,9 @@
+package ex02;
+
+interface printable{
+	void print();
+}
+
+public class UseMemberInnerClass {
+
+}

@@ -1,0 +1,19 @@
+package ex03;
+
+import java.util.Scanner;
+
+public class Exam05 {
+
+	public static void main(String[] args) {
+		int balance=0; //잔고
+		boolean flag = true;
+		Scanner sc = new Scanner(System.in);
+		
+		while(flag) {
+			System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료 ");
+			System.out.println("선택>");
+			int num = sc.nextInt();
+		}
+	}
+
+}

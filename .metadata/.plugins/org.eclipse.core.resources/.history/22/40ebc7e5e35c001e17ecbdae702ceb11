@@ -1,0 +1,29 @@
+package ex03;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class IteratorCollection {
+	public static void main(String[] args) {
+		List<String> list = new LinkedList<String>();
+		list.add("Toy");
+		list.add("Box");
+		list.add("Robot");
+		list.add("Box");
+
+		Iterator<String> itr = list.iterator(); // 반복자 획득
+
+		String str;
+		while (itr.hasNext()) {
+			str = itr.next();
+			System.out.println(str);
+			// itr에 다음줄(데이터)이 있어서 itr.hasNext가 true가 되고 next()로 인해 toy 값이 str에 저장 & 출력됨 이 반복
+		}
+		while (itr.hasNext()) { //이미 end지점에 잇어서 true가 안됨(다음 데이터가 없음)
+			//다시 돌게 만드려면 itr = list.iterator()로 itr에 다시 데이터를 넣어줌
+			str = itr.next();
+			System.out.println(str); 
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package ex02;
+
+class Box3<T>{
+	private T t; //필드
+	public T get() { //getter 메서드 
+		return t;
+	}
+	public void set(T t) { //setter 메서드
+		this.t = t;
+	}
+}
+
+public class WildCardUnBox {
+	public static void main(String[] args) {
+		
+	}
+}

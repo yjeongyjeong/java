@@ -1,0 +1,32 @@
+package ex01;
+
+class Vehicle{
+	private String name;
+	private String car;
+	
+	public String getName(){
+		return "Car name : " + car;
+	}
+	
+}
+
+class Car extends Vehicle{
+	public Car(String car) {
+		super(car);
+	}
+	
+	public String getName(String val) {
+		return "Car name : " + val;
+	}
+	public String getName(byte val[]) {
+		return "Car name : " + val;
+	}
+}
+
+public class Eduwil {
+	public static void main(String[] args) {
+		Car obj = new Car("Spark");
+		
+		System.out.println(obj.getName());
+	}
+}

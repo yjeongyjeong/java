@@ -1,0 +1,12 @@
+package ex08_singleton;
+
+public class Singleton {
+
+	private static SingleTon singleton = new SingleTon();
+	private SingleTon() {
+		
+	}
+	public static SingleTon getInstance() {
+		return singleton;
+	}
+}

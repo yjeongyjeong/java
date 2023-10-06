@@ -1,0 +1,16 @@
+package ex02;
+
+interface printable{
+	void print();
+}
+
+class Papers{
+	private String con;
+	public Papers() {
+		
+	}
+}
+
+public class UseMemberInnerClass {
+
+}

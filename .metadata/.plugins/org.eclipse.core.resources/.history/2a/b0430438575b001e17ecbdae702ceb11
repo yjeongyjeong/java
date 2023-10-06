@@ -1,0 +1,14 @@
+package ex01;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class CharacterConverterStreamExample {
+	public static void main(String[] args) {
+
+	}
+	
+	static void write(String str) throws IOException{
+		new FileOutputStream("c:/data/test2.txt");
+	}
+}

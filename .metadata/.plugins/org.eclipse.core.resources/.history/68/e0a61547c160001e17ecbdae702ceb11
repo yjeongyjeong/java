@@ -1,0 +1,17 @@
+package com.movie;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		System.out.println("프로그램을 시작합니다.");
+		
+		Menu menu = MainMenu.getInstance();
+		//Menu가 인터페이스인걸 눈치채고 와일안에 print랑 next가 있으므로 인터페이스내에 만들어주기
+		while(menu != null) {
+			menu.print();
+			menu = menu.next();
+		}
+		System.out.println("프로그램이 종료됩니다.");
+	}
+
+}

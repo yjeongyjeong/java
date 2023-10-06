@@ -1,0 +1,20 @@
+package ex06;
+
+interface Cal2 {
+	int max(int num1, int num2);
+}
+
+class Max2 implements Cal{
+	@Override
+	public int max(int num1, int num2) {
+		return num1>num2 ? num1 : num2;
+	}
+}
+
+public class Lambda5 {
+	public static void main(String[] args) {
+		Cal2 cal = new Max();
+		int result = cal.max(5, 10);
+		System.out.println(result);
+	}
+}

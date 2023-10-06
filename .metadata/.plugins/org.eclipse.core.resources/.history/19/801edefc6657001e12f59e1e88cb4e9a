@@ -1,0 +1,11 @@
+package ex06_static;
+
+public class Calculator {
+	
+	int result;
+	
+	void add(int num1, int num2) {
+		result =  num1+num2;
+	}
+
+}

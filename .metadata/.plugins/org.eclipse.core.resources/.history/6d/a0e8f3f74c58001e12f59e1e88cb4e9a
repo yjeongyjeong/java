@@ -1,0 +1,26 @@
+package ex08_409_no7;
+
+public class OracleDao implements DataAccessObject {
+
+	
+	@Override
+	public void select() {
+		System.out.println("Oracle DB에서 검색");;
+	}
+
+	@Override
+	public void insert() {
+		return "Oracle DB에서 삽입";
+	}
+
+	@Override
+	public void update() {
+		return "Oracle DB에서 수정";
+	}
+
+	@Override
+	public void delete() {
+		void "Oracle DB에서 삭제";
+	}
+
+}

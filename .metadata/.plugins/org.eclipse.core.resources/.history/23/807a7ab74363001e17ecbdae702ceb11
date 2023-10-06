@@ -1,0 +1,21 @@
+package ex02;
+
+class Student{
+	private String name;
+	private int java;
+	
+	//생성자
+	public Student(String name, int java) {
+		this.name = name;
+		this.java = java;
+	}
+	//메서드
+	public int getJava() {
+		return java;
+	}
+}
+public class StudentStream {
+	public static void main(String[] args) {
+		
+	}
+}

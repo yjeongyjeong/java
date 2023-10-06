@@ -1,0 +1,14 @@
+package ex08_409_no7_abstract;
+
+public interface DataAccessObject {
+
+	void select();
+
+	void insert();
+
+	void update();
+
+	void delete();
+
+
+}

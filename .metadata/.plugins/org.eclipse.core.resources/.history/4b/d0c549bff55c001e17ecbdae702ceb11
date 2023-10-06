@@ -1,0 +1,36 @@
+package ex08;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+//@NoArgsConstructor 기본생성자?
+class Car {
+	private String model;
+	private String color;
+
+	@Override
+	public String toString() {
+		return model + " : " + color;
+	}
+}
+
+public class SetCollection3 {
+	public static void main(String[] args) {
+		Set<Car> set = new HashSet<Car>();
+
+		set.add(new Car("소나타", "흰색"));
+		set.add(new Car("그랜저", "검정색"));
+		set.add(new Car("제네시스", "검정색"));
+		set.add(new Car("제네시스", "흰색"));
+		set.add(new Car("소나타", "검정색"));
+		set.add(new Car("소나타", "검정색"));
+
+		for (Car ss : set)
+			System.out.println(ss);
+		
+		
+	}
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="ex01.TV"/>
+    <fullyQualifiedTypeName name="ex03.TV"/>
+    <fullyQualifiedTypeName name="ex06_static.Calculator"/>
+    <fullyQualifiedTypeName name="ex08_singleton.SingleTon"/>
+    <fullyQualifiedTypeName name="ex08_singleton.A"/>
+    <fullyQualifiedTypeName name="ex08_singleton.SingletonExam"/>
+    <fullyQualifiedTypeName name="ex08_singleton.Singleton"/>
+    <fullyQualifiedTypeName name="ex09_inher.Phone"/>
+    <fullyQualifiedTypeName name="ex09_inher.SmartPhone"/>
+    <fullyQualifiedTypeName name="ex09_inher02.ParentCat"/>
+    <fullyQualifiedTypeName name="ex09_inher02.BabyCat"/>
+    <fullyQualifiedTypeName name="ex09_inher02.HybridCar"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
+    <fullyQualifiedTypeName name="ex09_inher02.HybridWaterCat"/>
+    <fullyQualifiedTypeName name="ex09_inher02.HybridWaterCar"/>
+    <fullyQualifiedTypeName name="ex07_static.Calculator"/>
+    <fullyQualifiedTypeName name="ex09_inher02.BabyCat2"/>
+    <fullyQualifiedTypeName name="ex01.소미"/>
+    <fullyQualifiedTypeName name="ex02.Animal"/>
+    <fullyQualifiedTypeName name="ex02.Pig"/>
+    <fullyQualifiedTypeName name="ex03.SamsungTV"/>
+    <fullyQualifiedTypeName name="ex03.LgTV"/>
+    <fullyQualifiedTypeName name="ex04.LgTVSub"/>
+    <fullyQualifiedTypeName name="ex05.A"/>
+    <fullyQualifiedTypeName name="ex05.B"/>
+    <fullyQualifiedTypeName name="ex05.C"/>
+    <fullyQualifiedTypeName name="ex07_interface.Printable"/>
+    <fullyQualifiedTypeName name="ex07_interface.CSPrint"/>
+    <fullyQualifiedTypeName name="ex07_interface.SPrinter"/>
+    <fullyQualifiedTypeName name="ex08_408_no6.Soundable"/>
+    <fullyQualifiedTypeName name="ex08_409_no7_abstract.DataAccessObject"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="ex09_FunctionInterface.ImplSampleInterface"/>
+    <fullyQualifiedTypeName name="ex09_FunctionInterface.SampleInterface"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="bookMarket.CartItem"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="ex01.Person"/>
+</qualifiedTypeNameHistroy>
