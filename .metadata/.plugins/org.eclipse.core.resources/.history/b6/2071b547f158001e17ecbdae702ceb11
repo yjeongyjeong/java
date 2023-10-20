@@ -1,7 +1,0 @@
-package ex01;
-
-public class Ex01_math {
-	public static void main(String[] args) {
-		Integer m = new Integer(10);
-	}
-}

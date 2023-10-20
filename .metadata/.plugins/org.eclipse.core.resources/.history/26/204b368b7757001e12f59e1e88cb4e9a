@@ -1,9 +1,0 @@
-package ex08_singleton;
-
-public class CalculatorExam {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

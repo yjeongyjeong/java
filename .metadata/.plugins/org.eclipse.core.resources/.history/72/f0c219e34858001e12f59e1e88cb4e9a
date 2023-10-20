@@ -1,8 +1,0 @@
-package ex08_408_no6;
-
-public class SoudableExample {
-
-	public static void printSound(Soundable soundable) {
-		System.out.println(saoundable.sound());
-	}
-}

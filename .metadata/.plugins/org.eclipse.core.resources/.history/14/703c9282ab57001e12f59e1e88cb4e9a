@@ -1,7 +1,0 @@
-package ex11;
-
-public class Employee2 extends Person {
-
-    Double salary;
-
-}

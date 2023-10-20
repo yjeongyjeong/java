@@ -1,9 +1,0 @@
-package ex07_interface;
-
-public class MainClass {
-	public static void main(String[] args) {
-		Printable prn = new Printer();
-		String msg = "Hello World";
-		prn.print(msg);
-	}
-}

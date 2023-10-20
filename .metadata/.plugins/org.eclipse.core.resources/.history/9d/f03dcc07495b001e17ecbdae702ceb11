@@ -1,9 +1,0 @@
-package ex01;
-
-import java.io.FileOutputStream;
-
-public class WriteExample2 {
-	public static void main(String[] args) {
-		FileOutputStream os  = new FileOutputStream("c:/data/test2.db");
-	}
-}

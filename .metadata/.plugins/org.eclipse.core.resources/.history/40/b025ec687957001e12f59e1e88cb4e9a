@@ -1,7 +1,0 @@
-package ex08_singleton;
-
-public class SingletonExam {
-
-	Singleton sp = new SingletonExam();
-	sp.apple;
-}

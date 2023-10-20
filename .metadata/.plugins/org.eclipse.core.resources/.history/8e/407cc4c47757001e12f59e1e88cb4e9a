@@ -1,9 +1,0 @@
-package ex08_singleton;
-
-public class SingleTon {
-
-	private static SingleTon singleton = new SingleTon();
-	private SingleTon() {
-		
-	}
-}

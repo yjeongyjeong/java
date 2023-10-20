@@ -1,6 +1,0 @@
-package ex08_singleton;
-
-public class A {
-	int number;
-	int number2;
-}

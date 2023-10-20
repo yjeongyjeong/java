@@ -1,8 +1,0 @@
-package ex02;
-
-public class Exam15 {
-	public static void main(String[] args) {
-		addition(3,4);
-		int result = subtraction(5,2);
-	}
-}

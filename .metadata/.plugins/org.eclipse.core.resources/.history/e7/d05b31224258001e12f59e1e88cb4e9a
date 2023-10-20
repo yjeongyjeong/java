@@ -1,5 +1,0 @@
-package ex07_interface;
-
-public interface Printable {
-
-}

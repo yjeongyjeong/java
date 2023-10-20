@@ -1,7 +1,0 @@
-package ex10;
-//공통되는 부분을 상위클래스로 만들음
-public class 사람 {
-	String 이름;
-	int 나이;
-
-}

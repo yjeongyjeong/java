@@ -1,7 +1,0 @@
-package ex07;
-
-public class MethodReferenceExam {
-	public static void main(String[] args) {
-		
-	}
-}

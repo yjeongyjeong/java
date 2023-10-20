@@ -1,9 +1,0 @@
-package bookMarket;
-
-public class CartItem {
-private String[] itemBook = new String[7];
-private String bookID;
-private int quantity;
-private int totalPrice;
-
-}

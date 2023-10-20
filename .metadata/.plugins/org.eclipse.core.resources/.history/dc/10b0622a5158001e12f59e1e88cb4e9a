@@ -1,6 +1,0 @@
-package ex09_FunctionInterface;
-
-public interface SampleInterface {
-
-	void sample();
-}

@@ -1,9 +1,0 @@
-package ex04;
-
-public class LgTVSub extends LgTV {
-//The type LgTVSub must implement the inherited abstract method TV.volumeUp()
-	@Override
-	public void volumeUp() {
-	}
-
-}

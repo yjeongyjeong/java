@@ -1,5 +1,0 @@
-package ex10;
-
-public class 대학동창 extends 사람{
-	String 전공;
-}

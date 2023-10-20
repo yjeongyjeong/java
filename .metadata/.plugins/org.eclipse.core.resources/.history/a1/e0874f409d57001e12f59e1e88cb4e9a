@@ -1,5 +1,0 @@
-package ex10;
-
-public class 동호회 extends 사람{
-	String 종목;
-}

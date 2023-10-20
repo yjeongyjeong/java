@@ -6,7 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="title"/>
 		<list key="findhistory">
+			<item value="title"/>
+			<item value="findbyid"/>
+			<item value="menuCartItem"/>
+			<item value="bookList"/>
+			<item value="toString"/>
 		</list>
 		<list key="replacehistory">
 		</list>

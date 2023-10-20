@@ -1,9 +1,0 @@
-package ex03;
-
-import java.io.File;
-
-public class ExceptionEx02 {
-	public static void main(String[] args) {
-		File file = new File("member.txt");
-	}
-}

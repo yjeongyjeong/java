@@ -1,8 +1,0 @@
-package ex09_inher;
-
-public class SmartPhone extends Phone{
-	public boolean wifi;
-	public void setWifi(boolean wifi) {
-		
-	}
-}

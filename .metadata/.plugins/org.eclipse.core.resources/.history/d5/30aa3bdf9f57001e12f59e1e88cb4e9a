@@ -1,7 +1,0 @@
-package ex10;
-
-public class 직장동료 extends 사람 {
-	String 부서명;
-// 상속받는데에 기본생성자가 없어서 오류가 발생함
-//
-}

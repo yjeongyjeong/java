@@ -1,6 +1,0 @@
-package ex07_interface;
-
-public class Printer implements Printable{
-
-	
-}

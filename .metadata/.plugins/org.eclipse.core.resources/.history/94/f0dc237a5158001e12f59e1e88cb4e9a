@@ -1,9 +1,0 @@
-package ex09_FunctionInterface;
-
-@FunctionalInterface //추상 메서드가 하나만 존재
-public interface SampleInterface {
-
-	void sample() {};
-//	void sample2(); 
-// Invalid '@FunctionalInterface' annotation; SampleInterface is not a functional interface라고 에러남
-}

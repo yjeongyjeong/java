@@ -1,9 +1,0 @@
-package ex06_static;
-//객체 생성없이 접근가능
-//근데 클래스가 다르면 공용공간이 안되나봄! 클래스가 다른데도 같은걸하고싶다면 final을 붙여야하나?
-public class Calculator_staticTest {
-	public static void main(String[] args) {
-		Calculator.minus = 100;
-		System.out.println(Calculator.minus);
-	}
-}

@@ -1,6 +1,0 @@
-package com.movie;
-
-public class Seats {
-	public static final int MAX_ROW = 5;
-	public static final int MAX_COL = 9;
-}

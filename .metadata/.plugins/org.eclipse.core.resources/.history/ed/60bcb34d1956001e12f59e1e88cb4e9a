@@ -1,8 +1,0 @@
-package ex03;
-
-public class Exam04 {
-	public static void main(String[] args) {
-		//while문과 scanner의 nextline()메소드를 이용해서 키보드 입력된 데이터로부터
-		
-	}
-}

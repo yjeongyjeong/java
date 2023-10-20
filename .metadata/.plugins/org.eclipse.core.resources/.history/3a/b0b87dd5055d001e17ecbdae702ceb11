@@ -1,8 +1,0 @@
-package ex12;
-
-
-public class StackExam {
-	public static void main(String[] args) {
-
-	}
-}

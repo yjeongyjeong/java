@@ -1,7 +1,0 @@
-package com.movie;
-
-public class Seats {
-	public static final int MAX_ROW = 5;
-	public static final int MAX_COL = 9;
-	private String[][] map = new String[MAX_ROW][MAX_COL];
-}

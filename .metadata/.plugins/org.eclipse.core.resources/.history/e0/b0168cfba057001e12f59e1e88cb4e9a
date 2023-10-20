@@ -1,9 +1,0 @@
-package ex05;
-
-public class TVTest {
-	public static void main(String[] args) {
-		TV tv = new TV();
-		System.out.println(tv.channel);
-		// this를 통해 아래에 다른 생성자를 호출해서 값을 초기화 시키고 밑에 sysout문장을 수행하는것까지가 생성자호출 시 일어나는 일 그리고 sysout(tv.channel)을 해줌
-	}
-}

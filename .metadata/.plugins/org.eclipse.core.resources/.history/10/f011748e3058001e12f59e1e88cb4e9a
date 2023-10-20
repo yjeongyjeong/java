@@ -1,9 +1,0 @@
-package ex04;
-
-public class LgTVSub extends LgTV {
-
-//	@Override
-//	public void volumeUp() {
-//	}
-
-}
